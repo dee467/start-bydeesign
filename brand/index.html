@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>ByDeesign Brand Guide</title>
+<meta name="description" content="The ByDeesign brand guide: logos, colour, type, stickers, photos, voice and a post maker for Instagram carousels, posts and stories.">
+<meta name="theme-color" content="#F8F3EF">
+<link rel="icon" href="/brand/assets/logos/bd-black-lime.png">
+<link rel="preload" href="/brand/assets/fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/brand/assets/fonts/league-spartan-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/style.css">
+<style>
+/* Brand fonts. If Dee's own fonts are installed on the computer they are used;
+   otherwise the web stand-ins load. Same names are used by the post maker. */
+@font-face{font-family:"BYD Serif";src:local("Times New Roman MT Condensed"),local("TimesNewRomanMTStd-Cond"),local("TimesNewRomanMT-Condensed"),url(/brand/assets/fonts/instrument-serif-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"BYD Caps";src:local("Lovelo Black"),local("Lovelo-Black"),local("Lovelo"),url(/brand/assets/fonts/league-spartan-latin-800-normal.woff2) format("woff2");font-weight:800;font-display:swap}
+@font-face{font-family:"BYD Body";src:url(/brand/assets/fonts/montserrat-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"BYD Body";src:url(/brand/assets/fonts/montserrat-latin-500-normal.woff2) format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:"BYD Body";src:url(/brand/assets/fonts/montserrat-latin-600-normal.woff2) format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"BYD Body";src:url(/brand/assets/fonts/montserrat-latin-700-normal.woff2) format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"BYD Script";src:local("Sulu Script"),local("SuluScript"),local("Sulu Script Regular"),url(/brand/assets/fonts/sacramento-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"BYD Round";src:url(/brand/assets/fonts/chewy-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Instrument Serif";src:url(/brand/assets/fonts/instrument-serif-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"League Spartan";src:url(/brand/assets/fonts/league-spartan-latin-800-normal.woff2) format("woff2");font-weight:800;font-display:swap}
+@font-face{font-family:"League Spartan";src:url(/brand/assets/fonts/league-spartan-latin-700-normal.woff2) format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"Montserrat";src:url(/brand/assets/fonts/montserrat-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Montserrat";src:url(/brand/assets/fonts/montserrat-latin-500-normal.woff2) format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:"Montserrat";src:url(/brand/assets/fonts/montserrat-latin-600-normal.woff2) format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"Montserrat";src:url(/brand/assets/fonts/montserrat-latin-700-normal.woff2) format("woff2");font-weight:700;font-display:swap}
+
+:root{--k:#0C0C0C;--cr:#F4F0EA;--or:#D95E28;--ll:#E3E8A9;--pl:#B5C5EE;--pd:#94AAD5;--ol:#65623B;--li:#B5C15B;--r:20px}
+.bg{padding-block:clamp(64px,8vw,112px);border-top:1px solid var(--rule)}
+.bg.dark{background:var(--k);color:var(--cr);border-top:0}
+.bg.paper{background:var(--paper)}
+.num{font-family:var(--caps);font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);display:flex;gap:12px;align-items:center;margin-bottom:18px}
+.dark .num{color:#BDB8AE}
+.num b{display:inline-grid;place-items:center;min-width:32px;height:32px;border-radius:50%;background:var(--ink);color:var(--cream);font-size:12px;letter-spacing:0}
+.dark .num b{background:var(--ll);color:var(--k)}
+h2.d{font-size:clamp(48px,6.4vw,92px)}
+.intro{font-size:16px;line-height:1.7;color:var(--muted);max-width:640px;margin-top:22px}
+.dark .intro{color:#CFCAC0}
+h3.t{font-family:var(--caps);font-weight:800;text-transform:uppercase;font-size:clamp(20px,2.2vw,28px);letter-spacing:-.005em;line-height:1;margin:56px 0 8px}
+h3.t+p{color:var(--muted);font-size:15px;line-height:1.7;max-width:640px;margin-bottom:22px}
+.dark h3.t+p{color:#CFCAC0}
+.grid{display:grid;gap:16px}
+.card{background:var(--paper);border:1px solid var(--rule);border-radius:var(--r);padding:22px}
+.dark .card{background:#1A1A1A;border-color:#2C2C2C}
+.card h4{font-family:var(--caps);font-weight:800;text-transform:uppercase;font-size:18px;margin:0 0 6px;letter-spacing:.01em}
+.card p{font-size:14px;line-height:1.6;color:var(--muted);margin:0}
+.dark .card p{color:#BDB8AE}
+.btn.sm{min-height:36px;padding:8px 16px;font-size:11px}
+.btn.lime{background:var(--ll);border-color:var(--ll);color:var(--k)}
+.btn.lime:hover{background:transparent;color:var(--ll)}
+.dark .btn.ghost{color:var(--cr);border-color:var(--cr)}
+.dark .btn.ghost:hover{background:var(--cr);color:var(--k)}
+.btn[disabled]{opacity:.45;pointer-events:none}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.chip-btn{width:34px;height:34px;border-radius:50%;border:3px solid var(--paper);box-shadow:0 0 0 1px var(--rule);cursor:pointer;padding:0}
+.chip-btn.on{box-shadow:0 0 0 3px var(--ink)}
+.dark .chip-btn{border-color:#1A1A1A}
+.dark .chip-btn.on{box-shadow:0 0 0 3px var(--cr)}
+
+/* hero */
+.bhero{padding-block:clamp(64px,9vw,128px) clamp(56px,7vw,96px)}
+.bhero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.bhero h1{font-size:clamp(46px,6.6vw,96px);max-width:12ch}
+.bhero .lede{font-size:16px;line-height:1.7;color:var(--muted);max-width:520px;margin:28px 0 30px}
+.bhero .art{position:relative;aspect-ratio:4/5;max-width:440px;width:100%;justify-self:end}
+.bhero .art img{position:absolute;border-radius:14px;box-shadow:0 18px 40px rgba(12,12,12,.14);width:62%}
+.bhero .art img:nth-child(1){left:0;top:6%;transform:rotate(-5deg)}
+.bhero .art img:nth-child(2){right:0;top:0;transform:rotate(4deg)}
+.bhero .art img:nth-child(3){left:20%;bottom:0;transform:rotate(-1deg)}
+.jump{display:flex;flex-wrap:wrap;gap:8px}
+.jump a{font-family:var(--caps);font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border:1px solid var(--rule);background:var(--paper);border-radius:999px;padding:9px 14px}
+.jump a:hover{border-color:var(--ink)}
+.jump a.go{background:var(--ink);color:var(--cream);border-color:var(--ink)}
+
+/* logos */
+.logo-main{display:grid;grid-template-columns:1.35fr 1fr;gap:16px;margin-top:40px}
+.lstage{border-radius:var(--r);border:1px solid var(--rule);min-height:400px;display:grid;place-items:center;padding:40px;transition:background .25s}
+.lstage img{width:76%;max-width:460px}
+.variants{grid-template-columns:repeat(3,1fr);margin-top:16px}
+.variant{padding:0;overflow:hidden;display:flex;flex-direction:column}
+.variant .art{height:220px;display:grid;place-items:center;transition:background .25s}
+.variant .art img{max-height:150px;max-width:70%}
+.variant .txt{padding:18px 20px 20px;display:flex;flex-direction:column;gap:10px;flex:1}
+.rules{grid-template-columns:repeat(3,1fr);margin-top:16px}
+.room{background:var(--cream);border:1px solid var(--rule);border-radius:14px;display:grid;place-items:center;padding:44px 36px;margin-bottom:14px}
+.room img{width:90px;outline:1.5px dashed var(--or);outline-offset:22px}
+.sizes{display:flex;align-items:flex-end;gap:22px;margin-bottom:14px;flex-wrap:wrap}
+.sizes div{font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;text-align:center;line-height:1.4}
+.sizes img{margin:0 auto 6px}
+.donts{grid-template-columns:repeat(4,1fr);margin-top:16px}
+.dont{padding:0;overflow:hidden}
+.dont .pic{height:150px;display:grid;place-items:center;position:relative}
+.dont .pic img{max-height:96px;max-width:60%}
+.dont .pic::after{content:"";position:absolute;top:10px;right:10px;width:24px;height:24px;border-radius:50%;background:var(--or) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' stroke='white' stroke-width='3' stroke-linecap='round'%3E%3Cpath d='M7 7l10 10M17 7L7 17'/%3E%3C/svg%3E") center/13px no-repeat}
+.dont p{padding:14px 16px}
+.dont p b{display:block;font-family:var(--caps);font-weight:800;text-transform:uppercase;color:var(--ink);font-size:15px;margin-bottom:2px}
+
+/* colour */
+.swgrid{grid-template-columns:repeat(4,1fr);margin-top:40px}
+.swt{border-radius:var(--r);overflow:hidden;background:var(--paper);border:1px solid var(--rule);display:flex;flex-direction:column}
+.swt button.swchip{all:unset;cursor:pointer;height:150px;padding:16px;display:flex;flex-direction:column;justify-content:flex-end;font-family:var(--display);font-size:34px;line-height:.95;letter-spacing:-.02em;position:relative}
+.swt button.swchip:focus-visible{outline:3px solid var(--ink);outline-offset:-6px}
+.swt button.swchip em{font-style:normal;font-family:var(--body);font-weight:600;font-size:10px;letter-spacing:.12em;text-transform:uppercase;opacity:.8;position:absolute;top:14px;left:16px}
+.swt dl{margin:0;padding:12px 16px 8px;font-size:12.5px;display:grid;grid-template-columns:auto 1fr;gap:3px 12px}
+.swt dt{font-weight:600;font-size:10px;letter-spacing:.1em;color:var(--muted);padding-top:2px}
+.swt dd{margin:0;font-variant-numeric:tabular-nums;cursor:pointer}
+.swt dd:hover{text-decoration:underline}
+.swt .role{font-size:13px;padding:0 16px 16px;color:var(--muted);line-height:1.5;margin-top:auto}
+.pairs{grid-template-columns:repeat(4,1fr);margin-top:16px}
+.pair{border-radius:16px;aspect-ratio:4/5;padding:22px;display:flex;flex-direction:column;justify-content:center;border:1px solid var(--rule)}
+.pair .h{font-family:var(--display);font-size:clamp(30px,3vw,40px);line-height:.9;letter-spacing:-.025em}
+.pair .h span{border-radius:.12em;padding:0 .08em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.pair small{display:block;margin-top:14px;font-family:var(--body);font-weight:700;font-size:11px;line-height:1.4}
+.pair-cap{font-size:12px;color:var(--muted);margin-top:8px;line-height:1.45}
+.mix{display:flex;height:42px;border-radius:12px;overflow:hidden;margin-top:16px;border:1px solid var(--rule)}
+
+/* type */
+.fontgrid{grid-template-columns:1fr 1fr;margin-top:40px}
+.font .spec{padding-left:.08em;font-size:clamp(46px,6vw,80px);line-height:1;margin:14px 0 10px;overflow-wrap:anywhere}
+.font .meta{font-size:13px;color:var(--muted);line-height:1.6}
+.font .meta b{color:var(--ink)}
+.f-caps{font-family:"BYD Caps";font-weight:800;text-transform:uppercase;letter-spacing:-.01em}
+.f-serif{font-family:"BYD Serif";letter-spacing:-.03em}
+.f-body{font-family:"BYD Body";font-weight:700}
+.f-script{font-family:"BYD Script"}
+.f-round{font-family:"BYD Round"}
+.pairing{margin-top:16px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.pairing .card{padding:36px}
+.won{font-family:"BYD Script";font-size:40px;line-height:1}
+.wonc{font-family:"BYD Caps";font-weight:800;text-transform:uppercase;font-size:clamp(36px,4.2vw,58px);line-height:.92;margin:6px 0 12px}
+
+/* stickers & photos */
+.stickers{grid-template-columns:repeat(8,1fr);margin-top:40px}
+.stk{min-width:0;background:var(--paper);border:1px solid var(--rule);border-radius:16px;aspect-ratio:1;display:grid;place-items:center;padding:12px;cursor:pointer;position:relative}
+.stk img{max-width:86%;max-height:86%}
+.stk span{position:absolute;bottom:6px;left:0;right:0;text-align:center;font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);opacity:0;transition:opacity .15s}
+.stk:hover span,.stk:focus-visible span{opacity:1}
+.photos{grid-template-columns:repeat(6,1fr);margin-top:40px}
+.ph{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:3/4;background:#ddd;cursor:pointer;border:0;padding:0}
+.ph img{width:100%;height:100%;object-fit:cover}
+.ph i{position:absolute;left:8px;bottom:8px;font-style:normal;font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:var(--cr);color:var(--k);border-radius:999px;padding:3px 8px}
+
+/* voice */
+.lines{grid-template-columns:repeat(3,1fr);margin-top:40px}
+.vline{display:flex;flex-direction:column;gap:12px}
+.vline q{font-family:var(--display);font-size:30px;line-height:1;letter-spacing:-.02em;quotes:none;color:var(--cr)}
+.vline q b{font-weight:400;color:var(--pl)}
+.rules2{grid-template-columns:repeat(4,1fr);margin-top:16px}
+
+/* in use */
+.posts{grid-template-columns:repeat(6,1fr);margin-top:40px}
+.posts img{width:100%;border-radius:10px;aspect-ratio:4/5;object-fit:cover;background:#ddd}
+
+/* maker */
+#make .wrap{max-width:1360px}
+.mk{display:grid;grid-template-columns:400px 1fr;gap:28px;margin-top:40px;align-items:start}
+.panel{background:#161616;border:1px solid #2C2C2C;border-radius:var(--r);padding:22px}
+.field{margin-bottom:18px}
+.field>label,.field>.lab{display:block;font-family:var(--caps);font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:8px;color:var(--cr)}
+.field small{display:block;font-size:12px;line-height:1.5;color:#A9A49A;margin-top:6px}
+.dark input[type=text],.dark input[type=url],.dark textarea,.dark select{width:100%;background:#0C0C0C;border:1px solid #3A3A3A;border-radius:12px;color:var(--cr);padding:11px 13px;font:inherit;font-size:14px;line-height:1.5}
+.dark textarea{resize:vertical}
+.dark input:focus,.dark textarea:focus,.dark select:focus{outline:2px solid var(--ll);outline-offset:1px}
+.seg{display:flex;flex-wrap:wrap;gap:6px}
+.seg button{background:transparent;border:1px solid #3A3A3A;color:var(--cr);border-radius:999px;padding:8px 13px;font:inherit;font-size:12.5px;font-weight:600;cursor:pointer}
+.seg button.on{background:var(--ll);border-color:var(--ll);color:var(--k)}
+.pick{display:grid;grid-template-columns:repeat(6,1fr);gap:6px}
+.pick button{position:relative;border:2px solid transparent;border-radius:8px;padding:0;overflow:hidden;aspect-ratio:3/4;cursor:pointer;background:#222}
+.pick button img{width:100%;height:100%;object-fit:cover}
+.pick button.on{border-color:var(--ll)}
+.pick button.on::after{content:"✓";position:absolute;top:3px;right:3px;width:18px;height:18px;border-radius:50%;background:var(--ll);color:var(--k);font-size:11px;font-weight:700;display:grid;place-items:center}
+.pick.stk-pick{grid-template-columns:repeat(8,1fr)}
+.pick.stk-pick button{aspect-ratio:1;background:#2A2A2A}
+.pick.stk-pick button img{object-fit:contain;padding:4px}
+.pick .none{font-size:10px;color:var(--cr);font-weight:700;letter-spacing:.06em}
+.status{font-size:12.5px;line-height:1.5;color:#A9A49A;margin-top:10px;display:flex;gap:8px;align-items:flex-start}
+.status i{width:8px;height:8px;border-radius:50%;background:#666;flex:none;margin-top:5px}
+.status.ok i{background:var(--li)}
+.status.no i{background:var(--or)}
+.status a{color:var(--ll)}
+.go-row{display:flex;flex-direction:column;gap:8px}
+.go-row .btn{justify-content:center;width:100%}
+.out{display:flex;flex-direction:column;gap:16px;min-width:0}
+.strip{display:flex;gap:10px;overflow-x:auto;padding-bottom:6px}
+.strip .th{flex:none;width:112px;cursor:pointer;border:2px solid transparent;border-radius:10px;padding:0;background:none;position:relative}
+.strip .th.on{border-color:var(--ll)}
+.strip .th canvas{width:100%;display:block;border-radius:8px}
+.strip .th span{position:absolute;top:4px;left:4px;background:var(--k);color:var(--cr);font-size:10px;font-weight:700;border-radius:999px;padding:2px 7px}
+.strip .add{flex:none;width:112px;border:1.5px dashed #444;border-radius:10px;background:none;color:var(--cr);font-weight:700;font-size:12px;cursor:pointer;min-height:120px}
+.ed{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:20px;align-items:start}
+.preview{background:#161616;border:1px solid #2C2C2C;border-radius:var(--r);padding:18px;display:grid;place-items:center;position:sticky;top:12px}
+.preview canvas{max-width:100%;max-height:78vh;border-radius:6px;box-shadow:0 10px 30px rgba(0,0,0,.4)}
+.preview .row{margin-top:14px;justify-content:center}
+.ctrls .field{margin-bottom:14px}
+.ctrls .two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.toggles{display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:13px}
+.toggles label{display:flex;gap:8px;align-items:center;cursor:pointer}
+.empty{border:1.5px dashed #3A3A3A;border-radius:var(--r);padding:56px 28px;text-align:center;color:#A9A49A;font-size:15px;line-height:1.6}
+.read{background:#161616;border:1px solid #2C2C2C;border-radius:var(--r);padding:18px 20px;font-size:13.5px;line-height:1.6;color:#CFCAC0}
+.read h4{font-family:var(--caps);font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin:0 0 8px;color:var(--cr)}
+.read ul{margin:6px 0 0;padding-left:18px}
+.read .cap{white-space:pre-wrap;background:#0C0C0C;border:1px solid #2C2C2C;border-radius:12px;padding:12px 14px;margin-top:8px;color:var(--cr)}
+.dots{display:inline-flex;gap:4px;margin-left:8px;vertical-align:middle}
+.dots i{width:14px;height:14px;border-radius:50%;border:1px solid #444}
+#toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(20px);background:var(--ink);color:var(--cream);padding:10px 18px;border-radius:999px;font-size:13px;font-weight:600;opacity:0;transition:.2s;z-index:99;pointer-events:none}
+#toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+[hidden]{display:none!important}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+@media (max-width:1100px){
+  .mk{grid-template-columns:1fr}
+  .ed{grid-template-columns:1fr}
+  .preview{position:static}
+  .stickers{grid-template-columns:repeat(5,1fr)}
+  .posts,.photos{grid-template-columns:repeat(4,1fr)}
+}
+@media (max-width:860px){
+  .bhero .wrap,.logo-main,.fontgrid,.pairing{grid-template-columns:1fr}
+  .bhero .art{justify-self:center;max-width:340px}
+  .variants,.rules,.lines{grid-template-columns:1fr 1fr}
+  .swgrid,.pairs,.donts,.rules2{grid-template-columns:1fr 1fr}
+  .top nav a.link{display:none}
+}
+@media (max-width:560px){
+  .variants,.rules,.lines,.rules2{grid-template-columns:1fr}
+  .stickers{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .posts,.photos{grid-template-columns:repeat(3,1fr)}
+  .pick{grid-template-columns:repeat(4,1fr)}
+  .pick.stk-pick{grid-template-columns:repeat(6,1fr)}
+  .lstage{min-height:260px}
+  .top .btn{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="logo" href="/" aria-label="ByDeesign">ByDeesign</a>
+    <nav aria-label="Page">
+      <a class="link" href="/#start">Start here</a>
+      <a class="link" href="/#about">About Dee</a>
+      <a class="link" href="/#faq">Questions</a>
+      <a class="btn ghost" href="https://letters.bydeesign.com/">Send me the workbook</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="bhero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow" style="color:var(--muted);margin-bottom:24px">Brand guide · v1.0</p>
+      <h1 class="caps">The ByDeesign <span class="hl">brand.</span></h1>
+      <p class="lede">Logos, colours, fonts, stickers, photos and voice in one place, plus a post maker that builds carousels, posts and story covers from your words, using only the brand's own fonts, colours and marks.</p>
+      <nav class="jump" aria-label="Brand guide sections">
+        <a href="#logo">Logo</a><a href="#colour">Colour</a><a href="#type">Type</a><a href="#stickers">Stickers</a><a href="#photos">Photos</a><a href="#voice">Voice</a><a href="#inuse">In use</a><a class="go" href="#make">Make a post</a>
+      </nav>
+    </div>
+    <div class="art" aria-hidden="true">
+      <img src="/brand/assets/posts/post-01.webp" alt="">
+      <img src="/brand/assets/posts/post-03.webp" alt="">
+      <img src="/brand/assets/posts/post-22.webp" alt="">
+    </div>
+  </div>
+</section>
+
+<!-- 01 LOGO -->
+<section class="bg paper" id="logo">
+  <div class="wrap">
+    <p class="num"><b>01</b>Logo</p>
+    <h2 class="d">one eye on the brand</h2>
+    <p class="intro">The By Deesign logo with the eye is the main mark. The BD icon signs off every post. The plain BYDEESIGN wordmark is for small, quiet places, and Mira and Deia have marks of their own.</p>
+
+    <div class="logo-main">
+      <div class="lstage" id="mainStage" style="background:var(--cr)"><img id="mainLogo" src="/brand/assets/logos/bydeesign-logo.png" alt="By Deesign logo with the eye"></div>
+      <div class="card">
+        <h4>By Deesign + the eye</h4>
+        <p>Black letters with an olive eye on light backgrounds. Cream letters with a lime eye on dark ones. Tap a colour to see it.</p>
+        <div class="row" id="mainFlips" style="margin:18px 0 20px"></div>
+        <div class="row">
+          <a class="btn sm" href="/brand/assets/logos/bydeesign-logo.png" download="bydeesign-logo.png">PNG · Black</a>
+          <a class="btn sm ghost" href="/brand/assets/logos/bydeesign-logo-reversed.png" download="bydeesign-logo-reversed.png">PNG · Reversed</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid variants">
+      <div class="card variant">
+        <div class="art" id="bdArt" style="background:var(--cr)"><img id="bdImg" src="/brand/assets/logos/bd-black-periwinkle.png" alt="BD icon"></div>
+        <div class="txt">
+          <h4>BD icon</h4>
+          <p>The sign-off on every slide. The letters are black or cream; the asterisk takes a colour from the slide.</p>
+          <div class="row" id="bdLetters"></div>
+          <div class="row" id="bdStar"></div>
+          <div class="row"><button class="btn sm" type="button" id="bdDl">Download this one</button></div>
+        </div>
+      </div>
+      <div class="card variant">
+        <div class="art" style="background:var(--or)"><img src="/brand/assets/logos/wordmark-black.png" alt="BYDEESIGN wordmark"></div>
+        <div class="txt">
+          <h4>BYDEESIGN wordmark</h4>
+          <p>Montserrat, widely spaced. For email footers, documents and small print.</p>
+          <div class="row"><a class="btn sm" href="/brand/assets/logos/wordmark-black.png" download>Black</a><a class="btn sm ghost" href="/brand/assets/logos/wordmark-cream.png" download>Cream</a></div>
+        </div>
+      </div>
+      <div class="card variant">
+        <div class="art" style="background:var(--k)"><img src="/brand/assets/logos/cat.png" alt="The ByDeesign cat"></div>
+        <div class="txt">
+          <h4>The cat</h4>
+          <p>Designed for the wine brand, now part of ByDeesign. Used as a mark, a pattern and on tees.</p>
+          <div class="row"><a class="btn sm" href="/brand/assets/logos/cat.png" download="bydeesign-cat.png">PNG</a></div>
+        </div>
+      </div>
+      <div class="card variant">
+        <div class="art" style="background:var(--cr)"><img src="/brand/assets/logos/mira-logo.png" alt="Mira logo"></div>
+        <div class="txt">
+          <h4>Mira.</h4>
+          <p>The free brand reader. Lime serif with a black full stop.</p>
+          <div class="row"><a class="btn sm" href="/brand/assets/logos/mira-logo.png" download>On light</a><a class="btn sm ghost" href="/brand/assets/logos/mira-logo-reversed.png" download>On dark</a></div>
+        </div>
+      </div>
+      <div class="card variant">
+        <div class="art" style="background:var(--k)"><img src="/brand/assets/logos/deia-logo-reversed.png" alt="Deia logo"></div>
+        <div class="txt">
+          <h4>Deia.</h4>
+          <p>The AI brand manager. Periwinkle serif with a black full stop.</p>
+          <div class="row"><a class="btn sm" href="/brand/assets/logos/deia-logo.png" download>On light</a><a class="btn sm ghost" href="/brand/assets/logos/deia-logo-reversed.png" download>On dark</a></div>
+        </div>
+      </div>
+      <div class="card variant">
+        <div class="art" style="background:var(--ll)"><img src="/brand/assets/stickers/bd-eye.png" alt="BD and eye sticker"></div>
+        <div class="txt">
+          <h4>BD + eye sticker</h4>
+          <p>A sticker version of the marks, for playful posts and merch. More in <a href="#stickers">Stickers</a>.</p>
+          <div class="row"><a class="btn sm" href="/brand/assets/stickers/bd-eye.png" download>PNG</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid rules">
+      <div class="card">
+        <div class="room"><img src="/brand/assets/logos/bd-black-lime.png" alt=""></div>
+        <h4>Give it room</h4>
+        <p>Keep clear space round any mark, at least the height of the asterisk. Nothing else inside it.</p>
+      </div>
+      <div class="card">
+        <div class="sizes">
+          <div><img src="/brand/assets/logos/bd-black-periwinkle.png" style="height:96px" alt="">Slides<br>~100px tall</div>
+          <div><img src="/brand/assets/logos/bd-black-periwinkle.png" style="height:44px" alt="">Smallest<br>40px · 10mm</div>
+          <div><img src="/brand/assets/logos/bydeesign-logo.png" style="height:60px" alt="">Main logo<br>min 140px wide</div>
+        </div>
+        <h4>Not too small</h4>
+        <p>On a 1080px slide the BD icon sits about 100px tall in a bottom corner. Below 40px the letters close up.</p>
+      </div>
+      <div class="card">
+        <div class="room" style="background:var(--or)"><img src="/brand/assets/logos/bd-black-periwinkle.png" style="outline:0" alt=""></div>
+        <h4>Asterisk carries the colour</h4>
+        <p>Periwinkle on orange, cream and lime. Lime on olive and periwinkle. Never the same colour as the background.</p>
+      </div>
+    </div>
+
+    <h3 class="t">Please don't</h3>
+    <div class="grid donts">
+      <div class="card dont"><div class="pic" style="background:var(--cr)"><img src="/brand/assets/logos/bydeesign-logo.png" style="transform:scaleX(1.5) scaleY(.7)" alt=""></div><p><b>Stretch it</b>Resize from the corner only.</p></div>
+      <div class="card dont"><div class="pic" style="background:var(--k)"><img src="/brand/assets/logos/bydeesign-logo.png" alt=""></div><p><b>Black on dark</b>Use the reversed file on black, olive or photos.</p></div>
+      <div class="card dont"><div class="pic" style="background:var(--pl)"><img src="/brand/assets/logos/bd-cream-periwinkle.png" alt=""></div><p><b>Lose the asterisk</b>It disappears when it matches the background.</p></div>
+      <div class="card dont"><div class="pic" style="background:var(--cr)"><img src="/brand/assets/logos/bydeesign-logo.png" style="filter:drop-shadow(6px 6px 4px rgba(0,0,0,.5))" alt=""></div><p><b>Add effects</b>No shadows, glows or outlines on the logo.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 COLOUR -->
+<section class="bg" id="colour">
+  <div class="wrap">
+    <p class="num"><b>02</b>Colour</p>
+    <h2 class="d">eight colours, one loud one</h2>
+    <p class="intro">Orange is the loud one. Cream and black do most of the work, and the pale lime and periwinkle pick out the words that matter. Tap a colour or a code to copy it.</p>
+    <div class="grid swgrid" id="swatches"></div>
+    <h3 class="t">How they pair</h3>
+    <p>The combinations used on the grid. The highlight is the one colour that marks the point of the slide.</p>
+    <div class="grid pairs" id="pairs"></div>
+</div>
+  </div>
+</section>
+
+<!-- 03 TYPE -->
+<section class="bg paper" id="type">
+  <div class="wrap">
+    <p class="num"><b>03</b>Type</p>
+    <h2 class="d">four fonts, four jobs</h2>
+    <p class="intro">A condensed serif for most headlines, Lovelo capitals for the loud ones, Montserrat for everything small, and Sulu Script for the aside. If one of the brand fonts isn't installed on your computer, this page and the post maker use a close web stand-in, named below.</p>
+    <div class="grid fontgrid">
+      <div class="card font"><h4>Times New Roman MT Condensed</h4><div class="spec f-serif">your brand is in what you won't do</div><p class="meta"><b>Headlines, the house style.</b> Lowercase or sentence case, set big and tight. Stand-in: Instrument Serif.</p></div>
+      <div class="card font"><h4>Lovelo</h4><div class="spec f-caps">Same look, same tool</div><p class="meta"><b>All-caps headlines.</b> Truths, questions and calls to action. Stand-in: League Spartan ExtraBold.</p></div>
+      <div class="card font"><h4>Montserrat</h4><div class="spec f-body" style="font-size:clamp(28px,3vw,40px)">Sixteen years decoding brands.</div><p class="meta"><b>Sub-copy, labels, pills, the handle.</b> Bold for lines under a headline, regular for @deewoodward.</p></div>
+      <div class="card font"><h4>Sulu Script</h4><div class="spec f-script">things I won't do…</div><p class="meta"><b>The aside.</b> A short lead-in above a caps headline. Never a whole sentence. Stand-in: Sacramento.</p></div>
+    </div>
+    <div class="pairing">
+      <div class="card" style="background:var(--cr)"><div class="won">things I won't do…</div><div class="wonc">I won't start with your logo.</div><p class="f-body" style="color:var(--ink);font-size:16px">It's the least interesting thing about your brand, so it comes last.</p></div>
+      <div class="card" style="background:var(--k);color:var(--cr);border-color:var(--k)"><div class="f-round" style="font-size:clamp(40px,4.4vw,60px);line-height:1">Self-doubt dressed up as professionalism</div><p style="color:#BDB8AE;margin-top:16px">Rounded hand lettering for the black doodle posts. <!-- TODO: Dee to confirm the font name --> Stand-in: Chewy, until the real font is named.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 STICKERS -->
+<section class="bg" id="stickers">
+  <div class="wrap">
+    <p class="num"><b>04</b>Stickers</p>
+    <h2 class="d">little things with an eye</h2>
+    <p class="intro">Hand-drawn stickers in the brand colours, each with a white edge. Use one or two on a slide, never as the main message. Tap one to download it.</p>
+    <div class="grid stickers" id="stickerGrid"></div>
+  </div>
+</section>
+
+<!-- 05 PHOTOS -->
+<section class="bg paper" id="photos">
+  <div class="wrap">
+    <p class="num"><b>05</b>Photos</p>
+    <h2 class="d">dee, at home, in plain tees</h2>
+    <p class="intro">Warm light, the green wall and the living room, plain tees in brand colours, and a laptop never far away. Tap a photo to download it. Photos marked "cut-out" are ready for the post maker's cut-out slides.</p>
+    <div class="grid photos" id="photoGrid"></div>
+  </div>
+</section>
+
+<!-- 06 VOICE -->
+<section class="bg dark" id="voice">
+  <div class="wrap">
+    <p class="num"><b>06</b>Voice</p>
+    <h2 class="d">say the part they're avoiding</h2>
+    <p class="intro">Lines from the grid that sound like ByDeesign.</p>
+    <div class="grid lines">
+      <div class="card vline"><q>your brand is in what you <b>won't</b> do</q><p>sixteen years decoding brands and the answer always turns up there.</p></div>
+      <div class="card vline"><q>Take every offer off your page, <b>whatever's left</b> is your actual brand.</q></div>
+      <div class="card vline"><q>a brand with no face asks strangers to <b>trust a logo,</b> and strangers rarely do.</q></div>
+      <div class="card vline"><q>Most business problems are <b>identity problems in a different costume.</b></q></div>
+      <div class="card vline"><q>Your competitor can get the <b>same look from the same tool</b> before lunch.</q></div>
+      <div class="card vline"><q>If you can't see the gap, <b>you're standing too close.</b></q><p>Comment MIRA and my free brand reader will tell you your invisible price.</p></div>
+    </div>
+    <h3 class="t">House rules</h3>
+    <p>The same rules Deia writes by.</p>
+    <div class="grid rules2">
+      <div class="card"><h4>Short</h4><p>Short sentences. One point a slide.</p></div>
+      <div class="card"><h4>Specific</h4><p>If a line could be about anyone's brand, cut it or make it specific.</p></div>
+      <div class="card"><h4>No em dashes</h4><p>Use a comma, a full stop or "and".</p></div>
+      <div class="card"><h4>British English</h4><p>Plain words. No filler, no motivational phrases.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 07 IN USE -->
+<section class="bg" id="inuse">
+  <div class="wrap">
+    <p class="num"><b>07</b>In use</p>
+    <h2 class="d">the grid so far</h2>
+    <p class="intro">Recent posts. The full <a href="/brand/assets/posts/brand-quick-guide.webp">Brand Quick Guide</a> is here too.</p>
+    <div class="grid posts" id="postGrid"></div>
+  </div>
+</section>
+
+<!-- 08 MAKE -->
+<section class="bg dark" id="make">
+  <div class="wrap">
+    <p class="num"><b>08</b>Make a post</p>
+    <h2 class="d">what's the post about?</h2>
+    <p class="intro">Up to ten slides for a carousel, or one post or story cover. Write what each slide says, or give Deia a brief and a link to the offer and she writes them from the live page. Then change anything, slide by slide, and download.</p>
+
+    <div class="mk">
+      <form class="panel" id="brief" autocomplete="off" onsubmit="return false">
+        <div class="field"><span class="lab">What are you making?</span><div class="seg" id="fFormat"></div></div>
+        <div class="field"><span class="lab">Size</span><div class="seg" id="fSize"></div><small id="sizeNote"></small></div>
+        <div class="field" id="countField">
+          <label for="fCount">How many slides</label>
+          <select id="fCount"><option value="">Let Deia decide (5 to 8)</option></select>
+        </div>
+        <div class="field">
+          <label for="fText">What should the slides say?</label>
+          <textarea id="fText" rows="9" placeholder="Slide 1: your brand is in what you *won't* do&#10;Slide 2: ...&#10;&#10;Or just a brief: a carousel about why your logo comes last, ending with comment LETTERS."></textarea>
+          <small>Write "Slide 1:", "Slide 2:" to set the exact words. Put *stars* round the words to highlight. Or write a brief and Deia writes the slides.</small>
+        </div>
+        <div class="field">
+          <label for="fUrl">What is it promoting? (optional)</label>
+          <input id="fUrl" type="url" inputmode="url" placeholder="https://start.bydeesign.com/decode/">
+          <small>Deia reads the live page for the current offer name, price and wording before she writes.</small>
+        </div>
+        <div class="field">
+          <span class="lab">Photos Deia can use</span>
+          <div class="pick" id="fPhotos"></div>
+          <small>Pick a few. Upload your own in the slide editor.</small>
+        </div>
+        <div class="go-row">
+          <button class="btn lime" type="button" id="goAI">Write my slides with Deia</button>
+          <button class="btn ghost" type="button" id="goManual">Use my words as they are</button>
+        </div>
+        <div class="status" id="aiStatus"><i></i><span>Checking whether you're signed in to Deia…</span></div>
+      </form>
+
+      <div class="out" id="out">
+        <div class="empty" id="emptyState">Your slides will appear here.<br>Start on the left, or <button type="button" class="btn sm ghost" id="goBlank" style="margin-top:12px">start from a blank slide</button></div>
+        <div class="read" id="readBox" hidden></div>
+        <div class="strip" id="strip" hidden></div>
+        <div class="ed" id="editor" hidden>
+          <div class="preview">
+            <canvas id="cv" width="1080" height="1350" aria-label="Slide preview"></canvas>
+            <div class="row">
+              <button class="btn sm ghost" type="button" id="mvL" aria-label="Move slide left">←</button>
+              <button class="btn sm ghost" type="button" id="dup">Duplicate</button>
+              <button class="btn sm ghost" type="button" id="del">Delete</button>
+              <button class="btn sm ghost" type="button" id="mvR" aria-label="Move slide right">→</button>
+            </div>
+            <div class="row">
+              <button class="btn sm lime" type="button" id="dlOne">Download this slide</button>
+              <button class="btn sm" type="button" id="dlAll" style="background:var(--cr);color:var(--k);border-color:var(--cr)">Download all (ZIP)</button>
+            </div>
+          </div>
+          <div class="panel ctrls" id="ctrls">
+            <div class="field"><label for="eLayout">Layout</label><select id="eLayout"></select></div>
+            <div class="field"><span class="lab">Background</span><div class="row" id="eBg"></div></div>
+            <div class="field"><label for="eHead">Headline</label><textarea id="eHead" rows="3"></textarea><small>*Stars* mark the highlight. A new line forces a break.</small></div>
+            <div class="field"><span class="lab">Highlight</span><div class="seg" id="eHl"></div><div class="row" id="eAcc" style="margin-top:8px"></div></div>
+            <div class="two">
+              <div class="field"><label for="eLead">Small line above</label><input id="eLead" type="text"></div>
+              <div class="field"><label for="eLabel">Pill label</label><input id="eLabel" type="text"></div>
+            </div>
+            <div class="field"><label for="eSub">Line underneath</label><textarea id="eSub" rows="2"></textarea></div>
+            <div class="field"><span class="lab">Text size</span><input id="eSize" type="range" min="70" max="125" value="100" style="width:100%"></div>
+            <div class="field"><span class="lab">Align</span><div class="seg" id="eAlign"></div></div>
+            <div class="field" id="ePhotoField"><span class="lab">Photo</span><div class="pick" id="ePhoto"></div><div class="row" style="margin-top:8px"><label class="btn sm ghost" style="cursor:pointer">Upload a photo<input type="file" accept="image/*" id="eUp" class="vh"></label><span id="photoSide"></span></div></div>
+            <div class="field" id="eShotField"><span class="lab">Screenshot</span><div class="row"><label class="btn sm ghost" style="cursor:pointer">Upload a screenshot<input type="file" accept="image/*" id="eShot" class="vh"></label><small id="shotName" style="margin:0"></small></div></div>
+            <div class="field"><span class="lab">Sticker</span><div class="pick stk-pick" id="eSticker"></div></div>
+            <div class="field"><span class="lab">Extras</span>
+              <div class="toggles">
+                <label><input type="checkbox" id="tBd"> BD icon</label>
+                <label><input type="checkbox" id="tHandle"> @deewoodward</label>
+                <label><input type="checkbox" id="tNum"> Slide number</label>
+                <label><input type="checkbox" id="tArrow"> Swipe arrow</label>
+              </div>
+            </div>
+            <button class="btn sm ghost" type="button" id="shuffle" style="width:100%;justify-content:center">Try another colour</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="logo" href="/" aria-label="ByDeesign">ByDeesign</a>
+    <span>&copy; 2026 ByDeesign</span>
+  </div>
+</footer>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="/brand/brand.js"></script>
+<script src="/brand/maker.js"></script>
+</body>
+</html>
