@@ -235,5 +235,36 @@
   dms.forEach(function (d) { io.observe(d); });
 })();
 </script>
+<script>
+/* Decode waitlist switch: from 22:00 GMT on 20 Nov 2026 the buy buttons become
+   "Join the waitlist" and a banner shows. The deia.bydeesign.com/buy/decode
+   redirect is the backstop. To reopen: remove this block. */
+(function () {
+  var FROM = Date.parse('2026-11-20T22:00:00Z');
+  var WAITLIST = 'https://deia.bydeesign.com/waitlist';
+  var done = false;
+  function apply() {
+    if (done || Date.now() < FROM) return;
+    done = true;
+    document.querySelectorAll('[data-checkout]').forEach(function (a) {
+      a.textContent = 'Join the waitlist';
+      a.setAttribute('href', WAITLIST);
+    });
+    var bar = document.createElement('div');
+    bar.setAttribute('role', 'status');
+    bar.style.cssText = "background:#1C1C22;color:#F5F2EE;font-family:'Montserrat',sans-serif;font-size:13px;font-weight:600;line-height:1.5;text-align:center;padding:10px 22px;";
+    bar.appendChild(document.createTextNode('Decode is closed for now. '));
+    var l = document.createElement('a');
+    l.href = WAITLIST;
+    l.textContent = 'Join the waitlist to be first to know when it opens again.';
+    l.style.cssText = 'color:#E3E8A9;text-decoration:underline;';
+    bar.appendChild(l);
+    var pg = document.querySelector('.pg');
+    pg.insertBefore(bar, pg.firstChild);
+  }
+  apply();
+  setInterval(apply, 60000);
+})();
+</script>
 </body>
 </html>
